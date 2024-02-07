@@ -13,3 +13,18 @@ loginLink.addEventListener ('click', ()=> {
  function BackHome() {
    location.href = "../index.html";
 }
+
+function Login () {
+   var email = document.getElementById('email').value;
+   var senha = document.getElementById('password').value;
+
+   if (email === "william.pramos@outlook.com" && senha === "1234")
+   { alert ('Bem Vindo William !'); 
+   location.href = "../MenuCliente/menu.html";
+   } else {
+   Swal.fire({
+   title: "Ops !",
+   text: "Cadastro ou Senha Incorretos",
+   icon: "error"
+ });}
+}
